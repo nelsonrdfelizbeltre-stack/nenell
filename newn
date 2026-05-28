@@ -1,0 +1,54 @@
+{
+  "id": "nuvio.latinotmdb.personal",
+  "name": "Latino TMDB Personal",
+  "description": "Catálogos TMDB en Español Latino + Metadatos (con tu API Key)",
+  "version": "1.0.2",
+  "author": "Nelson",
+  "logo": "https://www.themoviedb.org/assets/2/favicon-32x32.png",
+  "resources": ["catalog", "meta"],
+  "types": ["movie", "tv"],
+  "catalogs": [
+    {
+      "id": "tmdb-popular-movies-es",
+      "name": "🎥 Populares en Español",
+      "type": "movie",
+      "idProperty": "tmdb"
+    },
+    {
+      "id": "tmdb-trending-movies-es",
+      "name": "🔥 Tendencias Películas",
+      "type": "movie",
+      "idProperty": "tmdb"
+    },
+    {
+      "id": "tmdb-top-rated-movies-es",
+      "name": "⭐ Mejor Valoradas",
+      "type": "movie",
+      "idProperty": "tmdb"
+    },
+    {
+      "id": "tmdb-popular-series-es",
+      "name": "📺 Series Populares Latino",
+      "type": "tv",
+      "idProperty": "tmdb"
+    },
+    {
+      "id": "tmdb-trending-series-es",
+      "name": "📈 Tendencias Series",
+      "type": "tv",
+      "idProperty": "tmdb"
+    }
+  ],
+  "behaviorHints": {
+    "configurationRequired": true
+  },
+  "config": [
+    {
+      "key": "tmdbApiKey",
+      "type": "text",
+      "title": "TMDB API Key",
+      "default": "7669ee71217e6a0a2c2a712b64f99c78",
+      "required": true
+    }
+  ]
+}
