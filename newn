@@ -1,11 +1,11 @@
 {
-  "id": "nuvio.latinotmdb.personal",
-  "name": "Latino TMDB Personal",
-  "description": "Catálogos TMDB en Español Latino + Metadatos (con tu API Key)",
-  "version": "1.0.2",
+  "id": "nuvio.latinotmdb.full",
+  "name": "Latino TMDB + Streams",
+  "description": "Catálogos TMDB + Streams en Español Latino (Personalizado por Nelson)",
+  "version": "1.1.0",
   "author": "Nelson",
   "logo": "https://www.themoviedb.org/assets/2/favicon-32x32.png",
-  "resources": ["catalog", "meta"],
+  "resources": ["catalog", "meta", "stream"],
   "types": ["movie", "tv"],
   "catalogs": [
     {
@@ -49,6 +49,23 @@
       "title": "TMDB API Key",
       "default": "7669ee71217e6a0a2c2a712b64f99c78",
       "required": true
+    }
+  ],
+  "streams": [
+    {
+      "name": "CineCalidad Latino",
+      "url": "https://api.cinecalidad.to/embed/",
+      "language": "es"
+    },
+    {
+      "name": "Idlix",
+      "url": "https://idlix.to/",
+      "language": "es"
+    },
+    {
+      "name": "DooFlix Latino",
+      "url": "https://dooflix.to/",
+      "language": "es"
     }
   ]
 }
